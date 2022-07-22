@@ -1,0 +1,49 @@
+/*adding the gotham font to the site*/
+@font-face {
+    font-family: 'gotham';
+    src: url(../fonts/GothamBold.ttf) format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'gotham';
+    src: url(../fonts/Gotham-Light.otf) format('opentype');
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'gotham';
+    src: url(../fonts/GothamBoldItalic.ttf) format('truetype');
+    font-weight: normal;
+}
+
+/*setting all the fonts on the webpage*/
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'gotham', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background: linear-gradient(to right, white, grey);
+    margin: 50px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+button{
+    color: blue;
+}
+
+.nav{
+    margin: 100px;
+}
