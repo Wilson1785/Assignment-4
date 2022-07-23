@@ -22,28 +22,27 @@
     font-weight: bold;
 }
 
+/*setting all the fonts on the webpage*/
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'gotham', sans-serif;
+    font-weight: bold;
+}
+
+/*setting the padding, margin & background color*/
 body{
+    padding: 0;
+    margin: 0;
     background: linear-gradient(to right, white, grey);
-    margin: 50px;
 }
 
 .box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    text-align: center;
+
 }
 
 a{
     font-size: 20px;
     text-decoration: none;
     padding: 20px;
-}
-
-button{
-    color: blue;
-}
-
-.nav{
-    margin: 100px;
 }
