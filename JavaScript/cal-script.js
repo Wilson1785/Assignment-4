@@ -97,68 +97,28 @@ numberButtons.forEach(button => {
 
 //the function to input numbers from the keyboard
 document.addEventListener('keydown', (event) => {
-    if(event.key == "1"){
+    if(
+        event.key == "1"||
+        event.key == "2"||
+        event.key == "3"||
+        event.key == "4"||
+        event.key == "5"||
+        event.key == "6"||
+        event.key == "7"||
+        event.key == "8"||
+        event.key == "9"||
+        event.key == "0"||
+        event.key == "."){
         currentInputTextElement.value += event.key;
         calculator.appendNumber(event.key)
     }
-    if(event.key == "2"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "3"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "4"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "5"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "6"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "7"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "8"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "9"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "0"){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "."){
-        currentInputTextElement.value += event.key;
-        calculator.appendNumber(event.key)
-    }
-    if(event.key == "-"){
+    if(
+        event.key == "-"||
+        event.key == "+"||
+        event.key == "*"||
+        event.key == "/"||
+        event.key == "="){
         operationButtons.value += event.key;
-        calculator.chooseOperation(event.key)
-    }
-    if(event.key == "+"){
-        operationButtons.value += event.key;
-        calculator.chooseOperation(event.key)
-    }
-    if(event.key == "/"){
-        operationButtons.value += event.key;
-        calculator.chooseOperation(event.key)
-    }
-    if(event.key == "*"){
-        operationButtons.value += event.key;
-        calculator.chooseOperation(event.key)
-    }
-    if(event.key == "="){
-        equalsButton.value += event.key;
         calculator.chooseOperation(event.key)
     }
     calculator.updateDisplay()
